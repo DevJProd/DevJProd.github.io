@@ -1,181 +1,277 @@
-<!doctype html>
+<!-- 
+  Hello 😊.
+
+  This template is designed and developed by Nisar Hassan Naqvi
+  for anyone to use for free or customize the way they like.
+
+  Github Repo: https://github.com/nisarhassan12/portfolio-template/
+  My Website: https://nisar.dev
+
+  For business & inquires, contact me => syednisarhassan12@gmail.com
+-->
+
+<!--
+  Follow the instructions written in comments to create your stunning portfolio
+-->
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/fa62c117c7.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="styles.css" />
-    <title>Javier AS</title>
-  </head>
-  <body class="light" id="top">
-    <header class="header center">
-      <h3>
-        <a href="https://rjshkhr.github.io/cleanfolio-minimal" class="link"
-          >JAVIER AS</a
-        >
-      </h3>
 
-      <nav class="nav center">
-        <ul class="nav__list center">
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#projects">Projects</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+  <!-- Put your site title here -->
+  <title>
+    Javier Agüera | A Software Engineer based in Spain.
+  </title>
+
+  <meta name="description" content="Add small description of yourslef.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
           </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#skills">Skills</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#contact">Contact</a>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
           </li>
         </ul>
-
-        <button type="button" aria-label="toggle theme" class="btn btn--icon">
-          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
-        </button>
-
-        <button
-          type="button"
-          aria-label="toggle navigation"
-          class="btn btn--icon nav__hamburger"
-        >
-          <i aria-hidden="true" class="fas fa-bars"></i>
-        </button>
       </nav>
-    </header>
-
-    <main>
-      <!-- About -->
-      <div class="about center">
-        <h1>Hi, I am <span class="about__name">Javier Agüera.</span></h1>
-        <h2 class="about__role">A Back end Developer.</h2>
-        <p class="about__desc">
-          With a background in Telecommunications Engineering specializing in
-          Electronic Systems, I've built a solid foundation in embedded SW development,
-          where I've honed my skills throughout my career, I've recently transitioned into
-          the exciting world of Web3 and blockchain as a backend developer.
-          I am deeply committed to mastering the core technologies in this
-          innovative space and am passionate about expanding my expertise.
-          As I continue to build and refine my skill set, I'm eager to contribute
-          to groundbreaking projects and grow within this amazing sector
-        </p>
-
-        <div class="about__contact center">
-          <a href="https://example.com">
-            <span class="btn btn--outline">Resume</span>
-          </a>
-
-          <a
-            href="https://github.com/rjshkhr"
-            aria-label="github"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-
-          <a
-            href="https://es.linkedin.com/in/javier-agüera"
-            aria-label="linkedin"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-linkedin"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Projects -->
-      <section id="projects" class="section projects">
-        <h2 class="section__title">Projects</h2>
-
-        <div class="projects__grid">
-          <div class="project">
-            <h3>Wallet Analyzer BOT</h3>
-            <p class="project__description">
-              Account performance analisis tool implemented using Python and Helius APIs
-              to fetch on-chain data related to Solana wallet address. 
-              Users interactions based on user commands introduced in Discord, which triggers
-              the analysis request and returns detailed wallet performance metrics.
-              This project seamlessly integrates blockchain
-              data with user-friendly access via a popular communication platform
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Python</li>
-              <li class="project__stack-item">Helius API</li>
-              <li class="project__stack-item">HTTP</li>
-            </ul>
-
-            <a
-              href="https://github.com"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://example.com"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Skills -->
-      <section class="section skills" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">RUST</li>
-          <li class="skills__list-item btn btn--plain">C++</li>
-          <li class="skills__list-item btn btn--plain">C</li>
-          <li class="skills__list-item btn btn--plain">Python</li>
-          <li class="skills__list-item btn btn--plain">Node JS</li>
-          <li class="skills__list-item btn btn--plain">TypeScript</li>
-          <li class="skills__list-item btn btn--plain">Git</li>
-          <li class="skills__list-item btn btn--plain">Linux</li>
-          <li class="skills__list-item btn btn--plain">RTOS</li>
-          <li class="skills__list-item btn btn--plain">CI/CD</li>
-          <li class="skills__list-item btn btn--plain">SCRUM</li>
-          <li class="skills__list-item btn btn--plain">Agile</li>
-          <li class="skills__list-item btn btn--plain">JIRA</li>
-        </ul>
-      </section>
-
-      <!-- Contact -->
-      <section class="section contact center" id="contact">
-        <h2 class="section__title">Contact</h2>
-        <a href="mailto:javierastc@gmail.com">
-          <span class="btn btn--outline">Email me</span>
-        </a>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <a
-        href="https://github.com/rjshkhr/cleanfolio-minimal"
-        class="link footer__link"
-      >
-        Created By Javier AS
-      </a>
-    </footer>
-
-    <div class="scroll-container">
-      <div class="scroll-top">
-        <a aria-label="Scroll up" href="#top">
-          <i aria-hidden="true" class="fas fa-arrow-up"></i>
-        </a>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <!-- Replace the following name with your name -->
+          <span style="font-size: 9rem;">Javier Agüera</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>A Software Engineer based in Spain.</p>
+        <p>[Solana, Rust, C++].</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
       </div>
     </div>
+  </header>
 
-    <script src="./script.js"></script>
-  </body>
+  <main role="main">
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Work</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Orion Wallet Analizer </h3>
+              <p>
+                A tool deployed on Discord with an intuitive, user-friendly interface.
+                It displays PNL, win rate, ROI, and trade history in a clear format, 
+                enabling fast and accurate decisions based on well-tracked and transparent account data.
+              </p>
+              <ul class="work__list">
+                <li>Python</li>
+                <li>Helius Transactions API</li>
+                <li>Discord</li>
+                <li>Data Integration + Txs Balance </li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://x.com/OrionWalletBot" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Multi-Alarm Tracker</h3>
+              <p>
+                Multi Alarm Boot is a lightweight real-time alert system that trigger notifications based on key events occur.
+                It's designed to turn complex blockchain data into clear,
+                actionable insights so you never miss a beat.
+              </p>
+              <ul class="work__list">
+                <li>Node js</li>
+                <li>Telegram</li>
+                <li>Helius enhanced websockets</li>
+                <li>SQL</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="#">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Notificator</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                eius.
+              </p>
+              <ul class="work__list">
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Node</li>
+                <li>MongoDB</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="#">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-3.jpg" class="work__image" alt="Project 3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Clients ***** -->
+
+    <!-- <section class="client" id="clients">
+      <div class="row">
+        <h2>Clients</h2>
+        <div class="client__logos">
+          
+          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
+          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
+          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
+          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
+          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
+          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
+        </div>
+      </div>
+    </section> -->
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+              Hi, I'm Javier Agüera, a dedicated Web3 and blockchain developer based in Spain.
+              I specialize in building decentralized solutions on platforms like Solana using
+              Rust and smart contract technologies. I'm passionate about turning complex blockchain
+              challenges into simple, effective products that drive innovation in finance and technology.
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="https://drive.google.com/file/d/1s2SkOH_y1b3Z6lpS-hjgJp4mCOYlM4vv/view?usp=drive_link" class="btn">My Resume</a>
+          </div>
+
+          <div class="about__photo-container">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/About_me.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          Looking for powerful blockchain solutions, custom bots, or tailored scripts for your project? 
+          Whether you need consultation, advice, or just want to connect, feel free to reach out.
+          The quickest way to get in touch is via Telegram/Discord so I’ll respond as soon as possible.
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:you@example.com" class="btn">javierastc@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://twitter.com/Jagusan25/" title="Link to Twitter Profile">
+            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://github.com/devjprod/" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/javier-agüera/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://t.me/Javier_AS">
+            <img src="./images/Telegram_logo.svg" title="Link to TG" class="footer__social-image" alt="Telegram">
+          </a>
+        </li>
+      </ul>
+
+      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
+      <p>
+        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
+      </p>
+      <div class="footer__github-buttons">
+        <iframe
+          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
+          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
+        </iframe>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js" defer></script>
+</body>
+
 </html>
