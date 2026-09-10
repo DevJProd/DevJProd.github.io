@@ -1,19 +1,3 @@
-<!-- 
-  Hello 😊.
-
-  This template is designed and developed by Nisar Hassan Naqvi
-  for anyone to use for free or customize the way they like.
-
-  Github Repo: https://github.com/nisarhassan12/portfolio-template/
-  My Website: https://nisar.dev
-
-  For business & inquires, contact me => syednisarhassan12@gmail.com
--->
-
-<!--
-  Follow the instructions written in comments to create your stunning portfolio
--->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,255 +6,410 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
 
-  <!-- Put your site title here -->
-  <title>
-    Javier Agüera | A Software Engineer based in Spain.
-  </title>
+  <title>Javier Agüera — C/C++ Embedded &amp; Real-Time Software Engineer</title>
 
-  <meta name="description" content="Personal Portfolio">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <meta name="description"
+    content="Javier Agüera — C/C++ embedded and real-time software engineer based in Spain. 8+ years building safety-critical systems for defense and railway; now working on blockchain infrastructure reliability at QuickNode." />
+  <meta name="keywords"
+    content="Javier Agüera, C, C++, embedded software, real-time, RTOS, VxWorks, defense, safety-critical, blockchain infrastructure, QuickNode, Spain" />
+  <meta name="author" content="Javier Agüera" />
+  <meta name="theme-color" content="#0b0b12" />
+
+  <!-- Open Graph / Twitter cards (link previews) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Javier Agüera — C/C++ Embedded &amp; Real-Time Engineer" />
+  <meta property="og:description"
+    content="8+ years building safety-critical embedded systems for defense and railway. Now on blockchain infrastructure reliability at QuickNode." />
+  <meta property="og:url" content="https://devjprod.github.io/" />
+  <meta property="og:image" content="https://devjprod.github.io/images/header.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Javier Agüera — C/C++ Embedded &amp; Real-Time Engineer" />
+  <meta name="twitter:description"
+    content="8+ years building safety-critical embedded systems for defense and railway. Now on blockchain infrastructure reliability at QuickNode." />
+  <meta name="twitter:image" content="https://devjprod.github.io/images/header.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+
   <link rel="stylesheet" href="index.css" />
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
+  <a href="#experience" class="skip-link">Skip to content</a>
 
-  <!-- ***** Header ***** -->
+  <!-- ***** Header / Nav ***** -->
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__brand">JA<span>.</span></a>
 
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
+      <nav class="nav__menu" id="nav-menu" role="navigation" aria-label="Primary">
+        <a href="#experience" class="nav__link">Experience</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#contact" class="nav__link">Contact</a>
+        <a href="https://drive.google.com/file/d/1s2SkOH_y1b3Z6lpS-hjgJp4mCOYlM4vv/view?usp=drive_link"
+          target="_blank" rel="noopener" class="nav__link nav__link--cta">Résumé</a>
       </nav>
-    </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span style="font-size: 9rem;">Javier Agüera</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>A Software Engineer based in Spain.</p>
-        <p>[Solana, Rust, C++].</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
-      </div>
+
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false"
+        aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
-  <main role="main">
-
-    <!-- ***** Work ***** -->
-
-    <section class="work" id="work">
-      <div class="row">
-        <h2>My Work</h2>
-        <div class="work__boxes">
-
-          <!-- Each div with the work__box class is a project. -->
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Orion Wallet Analizer </h3>
-              <p>
-                A tool deployed on Discord with an intuitive, user-friendly interface.
-                It displays PNL, win rate, ROI, and trade history in a clear format, 
-                enabling fast and accurate decisions based on well-tracked and transparent account data.
-              </p>
-              <ul class="work__list">
-                <li>Python</li>
-                <li>Helius Transactions API</li>
-                <li>Discord</li>
-                <li>Data Integration + Txs Balance </li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://x.com/OrionWalletBot" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
-            </div>
+  <main>
+    <!-- ***** Hero ***** -->
+    <section class="hero" aria-label="Introduction">
+      <div class="container hero__inner">
+        <div class="hero__text reveal">
+          <p class="hero__eyebrow">// C/C++ Embedded · Real-Time &amp; Defense Systems · Spain</p>
+          <h1 class="hero__title">Javier Agüera</h1>
+          <p class="hero__lead">
+            Embedded &amp; real-time software engineer. 8+ years building
+            safety-critical systems for <strong>defense</strong> and
+            <strong>railway</strong> — now keeping blockchain infrastructure
+            reliable at <strong>QuickNode</strong>.
+          </p>
+          <ul class="hero__stack" aria-label="Core technologies">
+            <li>C</li>
+            <li>C++</li>
+            <li>VxWorks</li>
+            <li>RTOS</li>
+            <li>Linux</li>
+          </ul>
+          <div class="hero__cta">
+            <a href="#contact" class="btn btn--primary">Get in touch</a>
+            <a href="#experience" class="btn btn--ghost">View experience</a>
           </div>
+        </div>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Multi-Alarm Tracker</h3>
-              <p>
-                Multi Alarm Boot is a lightweight real-time alert system that trigger notifications based on key events occur.
-                It's designed to turn complex blockchain data into clear,
-                actionable insights so you never miss a beat.
-              </p>
-              <ul class="work__list">
-                <li>Node js</li>
-                <li>Telegram</li>
-                <li>Helius enhanced websockets</li>
-                <li>SQL</li>
-              </ul>
+        <div class="hero__visual reveal" aria-hidden="true">
+          <div class="terminal">
+            <div class="terminal__bar">
+              <span class="terminal__dot"></span>
+              <span class="terminal__dot"></span>
+              <span class="terminal__dot"></span>
+              <span class="terminal__name">javier@embedded ~ %</span>
+            </div>
+            <pre class="terminal__body"><span class="t-prompt">$</span> whoami
+<span class="t-out">javier_aguera</span>
 
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
+<span class="t-prompt">$</span> cat profile.txt
+<span class="t-key">role</span>  : Embedded SW Engineer
+<span class="t-key">focus</span> : C/C++ · Real-Time · Defense
+<span class="t-key">now</span>   : Blockchain Infra @ QuickNode
+<span class="t-key">based</span> : Spain · remote-friendly
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Voting dApp</h3>
-              <p>
-                A decentralized voting platform designed for secure, transparent, and verifiable decision-making
-                across any domain—governance, DAOs, or community-driven initiatives. 
-              </p>
-              <ul class="work__list">
-                <li>Rust</li>
-                <li>Anchor</li>
-                <li>Blinks</li>
-                <li>Actions</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://github.com/DevJProd/Voting-dApp" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/DevJProd/Voting-dApp">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-3.jpg" class="work__image" alt="Project 3" />
-            </div>
+<span class="t-prompt">$</span> uptime
+<span class="t-out">8+ years shipping safety-critical systems</span>
+<span class="t-prompt">$</span> <span class="t-cursor">▋</span></pre>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ***** Clients ***** -->
+    <!-- ***** Experience ***** -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__index">01</span>
+          <h2 class="section__title">Experience</h2>
+          <p class="section__sub">8+ years across blockchain infrastructure, railway and defense.</p>
+        </header>
 
-    <!-- <section class="client" id="clients">
-      <div class="row">
-        <h2>Clients</h2>
-        <div class="client__logos">
-          
-          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
-          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
-          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
-          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
-          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
-          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
+        <ol class="timeline">
+          <li class="tl reveal">
+            <div class="tl__meta">
+              <span class="tl__date">Jun 2025 — Present</span>
+              <span class="tl__place">Remote</span>
+            </div>
+            <div class="tl__body">
+              <h3 class="tl__role">Blockchain Infrastructure Engineer <span>· Production Reliability</span></h3>
+              <p class="tl__org">QuickNode</p>
+              <ul class="tl__points">
+                <li>Work close to production blockchain infrastructure — RPC services, WebSockets, APIs, indexing, latency, rate limits and degraded-service scenarios.</li>
+                <li>Debug complex distributed-system behavior with scripts, logs, request/response analysis and controlled reproduction workflows.</li>
+                <li>Isolate root cause across integrations, infrastructure, network conditions and chain-specific execution; turn incidents into actionable engineering context.</li>
+                <li>Correlate metrics and logs with Grafana, VictoriaMetrics and VictoriaLogs to support production-reliability decisions.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="tl reveal">
+            <div class="tl__meta">
+              <span class="tl__date">May 2022 — Jul 2024</span>
+              <span class="tl__place">Bilbao, Spain</span>
+            </div>
+            <div class="tl__body">
+              <h3 class="tl__role">Embedded Software Engineer</h3>
+              <p class="tl__org">CAF</p>
+              <ul class="tl__points">
+                <li>Developed C and Modern C++ software for safety-critical railway systems under strict reliability, timing, memory and certification constraints.</li>
+                <li>Owned a key embedded subsystem within a large-scale railway platform, from requirements implementation to integration validation.</li>
+                <li>Debugged and validated behavior across Linux / VxWorks environments — deployment, runtime analysis and constrained-system issues.</li>
+                <li>Led lab software integration: networking configuration, binary deployment, system testing and CI/CD with Jenkins and Git.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="tl reveal">
+            <div class="tl__meta">
+              <span class="tl__date">Apr 2020 — Apr 2022</span>
+              <span class="tl__place">Madrid, Spain</span>
+            </div>
+            <div class="tl__body">
+              <h3 class="tl__role">Software Development Engineer <span>· DIRCM</span></h3>
+              <p class="tl__org">Indra</p>
+              <ul class="tl__points">
+                <li>Built C/C++ software for DIRCM, an advanced aircraft countermeasure laser system — across VxWorks, Linux, SPI and DSP.</li>
+                <li>Designed, implemented and validated safety-critical modules under defense-grade quality standards and tight delivery deadlines.</li>
+                <li>Worked close to HW/SW integration, debugging embedded behavior with systems, integration and validation teams.</li>
+                <li>Supported Factory Acceptance Tests and subsystem certification through reviews, integration testing and validation evidence.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="tl reveal">
+            <div class="tl__meta">
+              <span class="tl__date">Mar 2018 — Mar 2020</span>
+              <span class="tl__place">Madrid, Spain</span>
+            </div>
+            <div class="tl__body">
+              <h3 class="tl__role">Software Development Engineer <span>· WSN / IoT</span></h3>
+              <p class="tl__org">Indra</p>
+              <ul class="tl__points">
+                <li>Developed embedded and networked software for a train-integrity monitoring pilot using Wireless Sensor Networks and IoT.</li>
+                <li>Implemented C++ across VxWorks / Linux, with Python scripting and MQTT-based communication for system integration.</li>
+                <li>Supported prototype integration, debugging and field-oriented validation across software and networking.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+
+        <p class="edu reveal">
+          <span class="edu__label">Education</span>
+          B.Sc. Telecommunications Engineering — University of Málaga (2012–2017) ·
+          Advanced Degree in Telecom &amp; Computer Systems — I.E.S. Mare Nostrum (2010–2012)
+        </p>
+      </div>
+    </section>
+
+    <!-- ***** Skills ***** -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__index">02</span>
+          <h2 class="section__title">Skills</h2>
+          <p class="section__sub">The stack behind production-grade, real-time software.</p>
+        </header>
+
+        <div class="skill-grid">
+          <div class="skill reveal">
+            <h3 class="skill__title">C/C++ &amp; Embedded</h3>
+            <ul class="tags">
+              <li>C</li><li>C++</li><li>Modern C++</li><li>Embedded SW</li>
+              <li>Low-level debugging</li><li>Memory/perf awareness</li><li>HW/SW integration</li>
+            </ul>
+          </div>
+          <div class="skill reveal">
+            <h3 class="skill__title">Real-Time &amp; OS</h3>
+            <ul class="tags">
+              <li>Linux</li><li>VxWorks</li><li>RTOS</li>
+              <li>Resource-constrained</li><li>System configuration</li><li>Production validation</li>
+            </ul>
+          </div>
+          <div class="skill reveal">
+            <h3 class="skill__title">Comms &amp; Interfaces</h3>
+            <ul class="tags">
+              <li>UDP/TCP</li><li>Sockets</li><li>MQTT</li>
+              <li>WebSockets</li><li>SPI</li><li>Protocol debugging</li>
+            </ul>
+          </div>
+          <div class="skill reveal">
+            <h3 class="skill__title">DevOps &amp; Tooling</h3>
+            <ul class="tags">
+              <li>Git</li><li>Jenkins</li><li>CI/CD</li>
+              <li>Docker</li><li>Python</li><li>Bash</li>
+            </ul>
+          </div>
+          <div class="skill reveal">
+            <h3 class="skill__title">Reliability &amp; Validation</h3>
+            <ul class="tags">
+              <li>Safety-critical</li><li>V&amp;V</li><li>FAT</li>
+              <li>RCA</li><li>Observability</li><li>Certification support</li>
+            </ul>
+          </div>
+          <div class="skill reveal">
+            <h3 class="skill__title">Infra &amp; Observability</h3>
+            <ul class="tags">
+              <li>Grafana</li><li>VictoriaMetrics</li><li>VictoriaLogs</li>
+              <li>Kubernetes</li><li>Terraform</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </section> -->
+    </section>
+
+    <!-- ***** Projects ***** -->
+    <section class="section work" id="projects">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__index">03</span>
+          <h2 class="section__title">Projects</h2>
+          <p class="section__sub">Side projects around Solana, bots and on-chain tooling.</p>
+        </header>
+
+        <div class="cards">
+          <!-- Project 1 -->
+          <article class="card reveal">
+            <div class="card__media">
+              <img src="./images/project-1.png" alt="Orion Wallet Analyzer dashboard" loading="lazy" />
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Orion Wallet Analyzer</h3>
+              <p class="card__desc">
+                A Discord-native analytics tool with a clean, intuitive interface.
+                Surfaces PnL, win rate, ROI and full trade history so users make
+                fast, accurate decisions from transparent, well-tracked data.
+              </p>
+              <ul class="tags">
+                <li>Python</li><li>Helius API</li><li>Discord</li><li>Tx Balance</li>
+              </ul>
+              <div class="card__links">
+                <a href="https://x.com/OrionWalletBot" target="_blank" rel="noopener" class="card__link">
+                  Visit site <span aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="card reveal">
+            <div class="card__media">
+              <img src="./images/project-2.png" alt="Multi-Alarm Tracker alert bot" loading="lazy" />
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Multi-Alarm Tracker</h3>
+              <p class="card__desc">
+                A lightweight, real-time alert system that fires notifications the
+                moment key on-chain events happen — turning complex blockchain data
+                into clear, actionable insights.
+              </p>
+              <ul class="tags">
+                <li>Node.js</li><li>Telegram</li><li>Helius WS</li><li>SQL</li>
+              </ul>
+              <div class="card__links">
+                <a href="https://t.me/Javier_AS" target="_blank" rel="noopener" class="card__link">
+                  Ask for a demo <span aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="card reveal">
+            <div class="card__media">
+              <img src="./images/project-3.jpg" alt="Voting dApp interface" loading="lazy" />
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Voting dApp</h3>
+              <p class="card__desc">
+                A decentralized voting platform for secure, transparent and verifiable
+                decision-making across any domain — governance, DAOs or
+                community-driven initiatives.
+              </p>
+              <ul class="tags">
+                <li>Rust</li><li>Anchor</li><li>Blinks</li><li>Actions</li>
+              </ul>
+              <div class="card__links">
+                <a href="https://github.com/DevJProd/Voting-dApp" target="_blank" rel="noopener" class="card__link">
+                  View source <span aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
     <!-- ***** About ***** -->
-
-    <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p>
-              Hi, I'm Javier Agüera, a dedicated Web3 and blockchain developer based in Spain.
-              I specialize in building decentralized solutions on platforms like Solana using
-              Rust and smart contract technologies. I'm passionate about turning complex blockchain
-              challenges into simple, effective products that drive innovation in finance and technology.
-            </p>
-            <!-- Provide a link to your resume -->
-            <a href="https://drive.google.com/file/d/1s2SkOH_y1b3Z6lpS-hjgJp4mCOYlM4vv/view?usp=drive_link" class="btn">My Resume</a>
-          </div>
-
-          <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/About_me.jpg" alt="" />
-          </div>
+    <section class="section about" id="about">
+      <div class="container about__inner">
+        <div class="about__photo reveal">
+          <img src="./images/About_me.jpg" alt="Javier Agüera" loading="lazy" />
         </div>
+        <div class="about__text reveal">
+          <header class="section__head">
+            <span class="section__index">04</span>
+            <h2 class="section__title">About Me</h2>
+          </header>
+          <p>
+            I'm Javier — a Telecommunications Engineer turned embedded software
+            specialist. For most of my career I've written C and Modern C++ for
+            environments where failure isn't an option: aircraft defense laser
+            countermeasures at Indra, and safety-critical railway platforms at CAF.
+          </p>
+          <p>
+            That work taught me to care about timing, memory, reliability and rigorous
+            validation. Today I bring the same mindset to production blockchain
+            infrastructure at QuickNode — debugging distributed systems and keeping
+            services fast and dependable at scale.
+          </p>
+          <div class="about__skills">
+            <span>C / C++</span><span>Real-Time</span><span>VxWorks</span>
+            <span>Safety-Critical</span><span>Distributed Systems</span><span>Observability</span>
+          </div>
+          <a href="https://drive.google.com/file/d/1s2SkOH_y1b3Z6lpS-hjgJp4mCOYlM4vv/view?usp=drive_link"
+            target="_blank" rel="noopener" class="btn btn--ghost">Download résumé</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Contact ***** -->
+    <section class="section contact" id="contact">
+      <div class="container contact__inner reveal">
+        <span class="section__index">05</span>
+        <h2 class="section__title contact__title">Let's build something reliable.</h2>
+        <p class="contact__lead">
+          Open to remote roles and relocation. Whether it's embedded/real-time work,
+          production reliability, or a quick technical chat — reach out.
+          Email or Telegram is the fastest way to me.
+        </p>
+        <a href="mailto:javierastc@gmail.com" class="btn btn--primary btn--lg">javierastc@gmail.com</a>
+
+        <ul class="socials" aria-label="Social links">
+          <li><a href="https://www.linkedin.com/in/javier-agüera/" target="_blank" rel="noopener" title="LinkedIn">
+              <img src="./images/linkedin.svg" alt="LinkedIn" /></a></li>
+          <li><a href="https://github.com/devjprod/" target="_blank" rel="noopener" title="GitHub">
+              <img src="./images/github.svg" alt="GitHub" /></a></li>
+          <li><a href="https://twitter.com/Jagusan25/" target="_blank" rel="noopener" title="Twitter / X">
+              <img src="./images/twitter.svg" alt="Twitter" /></a></li>
+          <li><a href="https://t.me/Javier_AS" target="_blank" rel="noopener" title="Telegram">
+              <img src="./images/telegram.svg" alt="Telegram" /></a></li>
+        </ul>
       </div>
     </section>
   </main>
 
-  <!-- ***** Contact ***** -->
-
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Looking for powerful blockchain solutions, custom bots, or tailored scripts for your project? 
-          Whether you need consultation, advice, or just want to connect, feel free to reach out.
-          The quickest way to get in touch is via Telegram/Discord so I’ll respond as soon as possible.
-        </p>
-        <!-- Replace the email with yours -->
-        <a href="mailto:you@example.com" class="btn">javierastc@gmail.com</a>
-      </div>
-    </div>
-  </section>
-
   <!-- ***** Footer ***** -->
-
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://twitter.com/Jagusan25/" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/devjprod/" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://www.linkedin.com/in/javier-agüera/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://t.me/Javier_AS">
-            <img src="./images/Telegram_logo.svg" title="Link to TG" class="footer__social-image" alt="Telegram">
-          </a>
-        </li>
-      </ul>
-
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-      <p>
-        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
-      </p>
-      <div class="footer__github-buttons">
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
-          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-        </iframe>
-      </div>
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__brand">Javier Agüera</span>
+      <p class="footer__note">&copy; <span id="year"></span> Javier Agüera — C/C++ Embedded &amp; Real-Time Engineer.</p>
     </div>
   </footer>
 
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  <a href="#top" class="back-to-top" id="back-to-top" title="Back to top" aria-label="Back to top">
+    <img src="./images/arrow-up.svg" alt="" />
   </a>
+
   <script src="./index.js" defer></script>
 </body>
 
