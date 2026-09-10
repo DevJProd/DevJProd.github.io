@@ -271,11 +271,7 @@ a { color: inherit; text-decoration: none; transition: color .2s ease; }
 .skill__title::before { content: ''; width: 8px; height: 8px; border-radius: 2px; background: var(--grad); }
 
 /* ---------------- About ---------------- */
-.about__inner { display: grid; grid-template-columns: .8fr 1.2fr; gap: 60px; align-items: center; }
-.about__photo img {
-  border-radius: var(--radius); width: 100%; border: 1px solid var(--border);
-  filter: grayscale(15%);
-}
+.about__inner { max-width: 760px; }
 .about__text .section__head { margin-bottom: 26px; }
 .about__text p { color: var(--muted); margin-bottom: 18px; }
 .about__skills { display: flex; flex-wrap: wrap; gap: 10px; margin: 26px 0 30px; }
